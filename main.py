@@ -27,7 +27,9 @@ def get_translation(input, dict_path):
 if __name__ == "__main__":
     dict_path = './tool/word_dict.csv'
 
-    str = input('input :')
-    res = get_translation(str, dict_path)
-
-    print('output:'+res)
+    print('直接输入回车，程序退出。')
+    str = input('输入:')
+    while str != '':
+        res = get_translation(str, dict_path)
+        print(res + '\n')
+        str = input('输入:')
